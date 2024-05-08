@@ -8,3 +8,8 @@ I open 1 terminal to run the server in vscode and 3 terminal to run the client s
 ## 2.2. Modifying the websocket port
 
 After modifying the port on the server side to `8080`, we also have to change the port on the client side in order to have a connection to the server. In the line of code where we specify the link for the localhost port, we can see that the client side use a WebSocket Protocol while the server side use a TCP(Transmission Control Protocol).
+
+# 2.3. Small changes. Add some information to client
+
+![](imgfiles/Screenshot%202024-05-08%20160924.png)
+Using `gethostname` package, now I can send the IP and port of the sender. Then I modify the server side and client side to change the format of the message to include the IP and port of the sender that has been converted into a String. 
